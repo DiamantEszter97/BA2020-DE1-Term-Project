@@ -89,6 +89,8 @@ load data infile 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/Student_Performa
 
 -- ------------------
 -- create join table results_details in stored procedure
+-- The main focus of the joint table is the students and there results in the departments. 
+-- Also, the table contains data n the departments as well.
 drop procedure if exists jointables_results_details;
 
 delimiter //
@@ -116,6 +118,7 @@ call jointables_results_details();
 
 -- ----------------------------------
 -- create join table dep_employee_details in stored procedure
+-- The main focus of the joint table is the employees working for different departments
 
 drop procedure if exists jointables_dep_employee_details;
 
